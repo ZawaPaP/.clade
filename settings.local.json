@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(pnpm audit:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm --filter @l-bridge/api test)",
+      "Bash(node -e:*)",
+      "Bash(npx vitest:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm --filter @l-bridge/shared test)",
+      "Bash(pnpm --filter @l-bridge/liff test:*)",
+      "Bash(pnpm update:*)",
+      "Bash(npx knip:*)",
+      "Bash(npx depcheck:*)",
+      "Bash(npx ts-prune)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Phase 1 - Project Setup & Infrastructure\n\n- Monorepo setup with pnpm workspaces\n- @l-bridge/shared: Types and Zod validation schemas\n- @l-bridge/api: Fastify backend with Redis, health check, bridge routes\n- @l-bridge/liff: React LIFF bridge app with hooks and components\n\nSecurity:\n- Input validation with Zod on all endpoints\n- Rate limiting with @fastify/rate-limit\n- Security headers with @fastify/helmet\n- Redis TLS enforcement in production\n\nTesting:\n- 70 tests passing \\(19 shared, 24 api, 27 liff\\)\n- TDD methodology followed\n- No security vulnerabilities\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(npm audit:*)",
+      "Bash(npm search fastify raw body)",
+      "Bash(pnpm --filter @l-bridge/api test:coverage)",
+      "Bash(pnpm --filter @l-bridge/api typecheck:*)",
+      "Bash(git commit:*)",
+      "Bash(git tag:*)"
+    ]
+  }
+}
