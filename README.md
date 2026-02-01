@@ -2,19 +2,6 @@
 
 このディレクトリはClaude Code（CLIツール）用のカスタム設定ファイル群です。
 
-## 重要: Cursor vs Claude Code
-
-| 機能 | Cursor | Claude Code (CLI) |
-|------|--------|-------------------|
-| `CLAUDE.md` | 読み込まれる | 読み込まれる |
-| `.claude/commands/` | 動作しない | `/tdd`等のコマンドで呼び出し |
-| `.claude/agents/` | 動作しない | コマンドから呼び出し |
-| `.claude/hooks/` | 動作しない | 自動実行 |
-| `.claude/rules/` | 動作しない | 参照される |
-| `.claude/skills/` | 動作しない | 参照される |
-
-**Cursorを使用している場合**: `CLAUDE.md`のみが有効です。`.claude`ディレクトリの機能を使うにはClaude Code CLIをインストールしてください。
-
 ## Claude Code CLIのインストール
 
 ```bash
@@ -66,6 +53,11 @@ Claude Codeで`/`を入力すると使えるカスタムコマンド。
 | `/verify` | コードの検証 |
 
 ### 使用例
+使いたい場所からシンボリックリンクを貼る時
+```
+ln -s ~/.claude_config .claude
+```
+
 
 ```
 User: /tdd 新しいログイン機能を実装したい
