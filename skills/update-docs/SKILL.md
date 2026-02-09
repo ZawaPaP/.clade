@@ -1,3 +1,8 @@
+---
+name: update-docs
+description: Sync and update documentation from source-of-truth.
+---
+
 # Update Documentation
 
 Sync documentation from source-of-truth:

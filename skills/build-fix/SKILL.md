@@ -1,6 +1,9 @@
-# Build and Fix
+---
+name: build-fix
+description: Incrementally fix TypeScript and build errors.
+---
 
-Incrementally fix TypeScript and build errors:
+# Build and Fix
 
 1. Run build: npm run build or pnpm build
 
