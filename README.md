@@ -33,32 +33,28 @@ claude
 
 ---
 
-## 1. Commands（コマンド）
+## 1. Skills（スキル）
 
-Claude Codeで`/`を入力すると使えるカスタムコマンド。
+専門知識セット。
 
-### 使用可能なコマンド一覧
+| スキル | 説明 |
+|--------|------|
+| `tdd-workflow` | TDD開発フロー |
+| `verification-loop` | 検証ループ |
+| `security-review` | セキュリティレビュー |
+| `coding-standards` | コーディング規約 |
+| `continuous-learning` | 継続学習 |
+| `strategic-compact` | 戦略的コンテキスト圧縮 |
+| `eval-harness` | 評価ハーネス |
 
-| コマンド | 説明 |
-|----------|------|
-| `/coaching` | コーチングモード（成長重視、質問で導く） |
-| `/tdd` | テスト駆動開発ワークフロー（テストを先に書く） |
-| `/plan` | 実装計画を作成（コードを書く前に） |
-| `/code-review` | コードレビューを実行 |
-| `/build-fix` | ビルドエラーを修正 |
-| `/e2e` | E2Eテストを実行 |
-| `/refactor-clean` | リファクタリングとコード整理 |
-| `/test-coverage` | テストカバレッジを確認 |
-| `/checkpoint` | 作業のチェックポイントを作成 |
-| `/verify` | コードの検証 |
 
 ### 使用例
 使いたい場所からシンボリックリンクを貼る時
 ```
-ln -s ~/.claude_config .claude
+ln -s ~/.claude .claude
 ```
 
-
+claude内で `/skills` で一覧を確認可能
 ```
 User: /tdd 新しいログイン機能を実装したい
 
@@ -185,108 +181,7 @@ Agent:
 
 ---
 
-## 6. Skills（スキル）
-
-再利用可能な専門知識セット。
-
-| スキル | 説明 |
-|--------|------|
-| `tdd-workflow` | TDD開発フロー |
-| `verification-loop` | 検証ループ |
-| `security-review` | セキュリティレビュー |
-| `coding-standards` | コーディング規約 |
-| `continuous-learning` | 継続学習 |
-| `strategic-compact` | 戦略的コンテキスト圧縮 |
-| `eval-harness` | 評価ハーネス |
-
----
-
-## 7. クイックスタート
-
-### Claude Code CLIで使う場合
-
-```bash
-# 1. プロジェクトディレクトリに移動
-cd /path/to/L-bridge
-
-# 2. Claude Codeを起動
-claude
-
-# 3. コマンドを使う
-/plan ログイン機能を実装したい
-```
-
-### Cursorで使う場合
-
-`CLAUDE.md`に書かれたルールのみが適用されます。
-
-- プロジェクト概要
-- コーディングルール
-- ファイル構成
-- エラー処理パターン
-- 環境変数
-
----
-
-## 8. カスタマイズ
-
-### 新しいコマンドを追加
-
-`commands/`に新しい`.md`ファイルを作成:
-
-```markdown
----
-description: コマンドの説明
----
-
-# Command Name
-
-## What This Command Does
-...
-
-## How It Works
-...
-```
-
-### 新しいフックを追加
-
-`hooks/hooks.json`を編集:
-
-```json
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "tool == \"Edit\"",
-        "hooks": [{
-          "type": "command",
-          "command": "echo 'File edited'"
-        }],
-        "description": "ファイル編集後の処理"
-      }
-    ]
-  }
-}
-```
-
----
-
-## 9. トラブルシューティング
-
-### コマンドが動かない
-- Claude Code CLIを使っているか確認
-- Cursorでは`.claude/commands/`は動作しません
-
-### フックが実行されない
-- `hooks.json`の構文エラーを確認
-- スクリプトのパスが正しいか確認
-
-### エージェントが呼び出されない
-- `commands/`内のコマンドファイルが正しくエージェントを参照しているか確認
-
----
-
-## 10. 参考リンク
+## 参考リンク
 
 - [Claude Code 公式ドキュメント](https://docs.anthropic.com/claude-code)
 - [CLAUDE.md ガイド](https://docs.anthropic.com/claude-code/claude-md)
