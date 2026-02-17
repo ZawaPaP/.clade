@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "plugins": {
+    "claude-opus-4-5-migration@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/claude-opus-4-5-migration/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:47:01.699Z",
+        "lastUpdated": "2026-02-17T02:47:01.699Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "explanatory-output-style@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/explanatory-output-style/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:47:18.270Z",
+        "lastUpdated": "2026-02-17T02:47:18.270Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "frontend-design@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/frontend-design/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:47:36.997Z",
+        "lastUpdated": "2026-02-17T02:47:36.997Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "pr-review-toolkit@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/pr-review-toolkit/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:47:44.676Z",
+        "lastUpdated": "2026-02-17T02:47:44.676Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "hookify@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/hookify/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-02-17T02:47:57.297Z",
+        "lastUpdated": "2026-02-17T02:47:57.297Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "security-guidance@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/security-guidance/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:48:04.576Z",
+        "lastUpdated": "2026-02-17T02:48:04.576Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ],
+    "learning-output-style@claude-code-plugins": [
+      {
+        "scope": "user",
+        "installPath": "/Users/k-izawa/.claude/plugins/cache/claude-code-plugins/learning-output-style/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-02-17T02:48:26.550Z",
+        "lastUpdated": "2026-02-17T02:48:26.550Z",
+        "gitCommitSha": "d787369919b749ec4d910fb48dea3f06fc33866a"
+      }
+    ]
+  }
+}
